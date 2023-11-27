@@ -17,3 +17,5 @@ jobs:
       run: curl "https://cdn.dos.zone/custom/openwatcom.zip" -o openwatcom.zip && mkdir -p $HOME/sdk && unzip openwatcom.zip -d $HOME/sdk/openwatcom
     - name: build.sh
       run: cd bin && ./build.sh
+    - uses: actions/upload-artifact@v3.1.3
+      path: bin
