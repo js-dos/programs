@@ -1,5 +1,7 @@
 # programs
 
+[![Build](https://github.com/js-dos/programs/actions/workflows/build.yml/badge.svg)](https://github.com/js-dos/programs/actions/workflows/build.yml)
+
 ## dhry2
 
 js-dos default benchmark
