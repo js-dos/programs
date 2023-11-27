@@ -8,6 +8,6 @@ js-dos default benchmark
 
 ## Building
 
-1. Install openwatcom
+1. Install openwatcom to ~/sdk/openwatcom
 2. Run cd bin
 3. ./build.sh
