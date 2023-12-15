@@ -34,3 +34,4 @@
 bin/*.o
 bin/*.exe
 bin/*.err
+bin/*.map

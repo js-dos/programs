@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: install openwatcom-1.9
-      run: curl "https://cdn.dos.zone/custom/openwatcom.zip" -o openwatcom.zip && mkdir -p $HOME/sdk && unzip openwatcom.zip -d $HOME/sdk/openwatcom
+      run: curl "https://cdn.dos.zone/custom/ow2.zip" -o ow2.zip && mkdir -p $HOME/sdk && unzip ow2.zip -d $HOME/sdk/ow2
     - name: build.sh
       run: cd bin && ./build.sh
     - uses: actions/upload-artifact@v3.1.3

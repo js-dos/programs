@@ -188,8 +188,8 @@ int             Int_Glob;
          printf ("With run time input data\n\n");
     }
    
-   printf ("Compiler        %s\n", compiler);
-   printf ("Optimisation    %s\n", options);
+   printf ("Compiler        %s\n", "open-watcom-v2");
+   printf ("Optimisation    %s\n", "-otexan -zp8 -5r");
    #ifdef ROPT
        printf ("Register option selected\n\n");
    #else
@@ -599,7 +599,6 @@ void Proc_4 () /* without parameters */
  #ifdef  NOSTRUCTASSIGN
  memcpy (d, s, l)
  register char   *d;
- register char   *s;
  register int    l;
  {
          while (l--) *d++ = *s++;
