@@ -293,13 +293,6 @@ int             Int_Glob;
          {
              count = 0;
          }
-       else
-         {
-             if (User_Time < 0.1)
-               {
-                  Number_Of_Runs = Number_Of_Runs * 5;
-               }
-         }
      }   /* calibrate/run do while */
    while (count >0);
  
@@ -606,11 +599,11 @@ void Proc_4 () /* without parameters */
  #endif
 
 /*
-@caiiiycuk: dtime that based on clock is good for real systems,
-but not for emdosbox, it can't grantee stable updates of it,
+@caiiiycuk: dtime() based on clock is good for real systems,
+but not for js-dos - it can't guarantee stable updates,
 and it's not possible to measure time with it.
-As workaround we will print marker in console to use Date.now
-in browser environment
+As a workaround, we will print a marker in the console to use Date.now()
+in the browser environment.
 */
 
 double dtime()
